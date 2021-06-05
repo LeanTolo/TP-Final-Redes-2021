@@ -23,9 +23,12 @@ public class Interface extends JFrame{ //implements Runnable
     private JScrollPane areaScrollPane;
 
 
+
     public Interface(String name){
+        areaScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        areaScrollPane.setViewportView(serverChatOutput);
         Label.setText(name);
-        setResizable(false);
+        setResizable(true);
         setContentPane(mainPanel);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         pack();

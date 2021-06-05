@@ -10,7 +10,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ThreadedServer {
-//    private static String[] nicknames = {"Lord","Master","Slave"};
     private static final int PORT = 3000;
     private static Interface anInterface = new Interface("Server");
 
